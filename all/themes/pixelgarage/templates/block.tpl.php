@@ -46,8 +46,6 @@
  */
 // node to load
 $nid = 21;
-$node = node_load($nid);
-$rendered_item = node_view($node, 'default');
 
 // modal dialog
 $path = drupal_get_path('theme', 'pixelgarage') . '/images/popup_close.svg';
@@ -59,33 +57,8 @@ $close_img = file_create_url($path);
 ?>
 <section id="block-registration" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php print $content ?>
-  <!-- modal trigger -->
-  <a class="button" role="button" data-toggle="modal" data-target="#snb-modal">
+  <!-- modal trigger data-toggle="modal" data-target="#snb-modal"-->
+  <a class="button" role="button" href="node/<?php print $nid; ?>">
     <?php print $button_text; ?>
   </a>
 </section>
-
-<div id="snb-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="snb-modal-label" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <!-- Header -->
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="<?php print $close_img ?>" aria-hidden="true"/></button>
-        <?php if ($modal_title): ?>
-          <h2 class="modal-title" id="snb-modal-label"><?php print $modal_title; ?></h2>
-        <?php endif; ?>
-        <div class="body-fading body-fading-top"></div>
-      </div>
-      <!-- Body -->
-      <div class="modal-body">
-        <?php if ($rendered_item) print render($rendered_item) ; ?>
-      </div>
-      <!-- Footer -->
-      <div class="modal-footer">
-        <div class="body-fading body-fading-bottom"></div>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><?php print $close_text; ?></button>
-      </div>
-
-    </div>
-  </div>
-</div>

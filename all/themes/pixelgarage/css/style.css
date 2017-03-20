@@ -1,128 +1,3 @@
-extend ' .clearfix' has no matches
-extend ' .clearfix' has no matches
-.modal-open {
-  overflow: hidden;
-}
-.modal {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-}
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  background-clip: padding-box;
-  outline: 0;
-}
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000;
-}
-.modal-backdrop.fade {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-.modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-}
-.modal-header .close {
-  margin-top: -2px;
-}
-.modal-title {
-  margin: 0;
-  line-height: 1.42857143;
-}
-.modal-body {
-  position: relative;
-  padding: 15px;
-}
-.modal-footer {
-  padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-}
-.modal-footer .btn + .btn {
-  margin-left: 5px;
-  margin-bottom: 0;
-}
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
-}
-.modal-scrollbar-measure {
-  position: absolute;
-  top: -9999px;
-  width: 50px;
-  height: 50px;
-  overflow: scroll;
-}
-@media (min-width: 48em) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  .modal-sm {
-    width: 300px;
-  }
-}
-@media (min-width: 61.5em) {
-  .modal-lg {
-    width: 900px;
-  }
-}
 /**
  * Variable Overrides.
  *
@@ -2522,6 +2397,379 @@ extend ' .clearfix' has no matches
 /*
  *  Modal dialog component
  * --------------------------------------------------*/
+/* --------------------------------------------------
+ * Pixelgarage Components
+ * --------------------------------------------------*/
+/*
+ *  Node / block webform component
+ * --------------------------------------------------*/
+.node.node-webform {
+  padding: 20px;
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-title {
+  margin: 0 0 30px;
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #222;
+  font-weight: normal;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
+    font-size: 22px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
+  margin: 10px auto 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #222;
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
+    font-size: 22px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  text-align: left;
+  color: #222;
+}
+@media screen and (min-width: 36em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
+    font-size: 3.125vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
+    font-size: 24px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
+  margin: 0 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
+    font-size: 17px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
+}
+@media screen and (min-width: 24em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
+    font-size: 13.02083333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
+    font-size: 100px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #222;
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
+    font-size: 22px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
+    font-size: 17px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a:hover,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a:focus {
+  color: #000;
+  text-decoration: underline;
+  background: none;
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
+    font-size: 17px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
+    font-size: 17px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
+    font-size: 17px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u:hover,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u:focus {
+  color: #000;
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  background-color: #ff0;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
+    font-size: 17px;
+  }
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item hr {
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background: none;
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item img {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item embed,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item video,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item audio,
+.node.node-webform > .row > .col-sm-12 > .field-name-body .field-item iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px;
+}
+.node.node-webform > .row > .col-sm-12 > .webform-client-form label.control-label {
+  display: inline-block;
+  margin: 0 -2px 10px;
+  width: 30%;
+  vertical-align: top;
+}
+.node.node-webform > .row > .col-sm-12 > .webform-client-form input {
+  display: inline-block;
+  margin: 0 -2px 10px;
+  width: 68%;
+  vertical-align: top;
+}
 /*
  *  Content section (main content)
  * --------------------------------------------------*/
@@ -2603,510 +2851,7 @@ body {
 #container #top #header .region-navigation #block-registration a {
   position: absolute;
   right: 20px;
-}
-#container #top #header .region-navigation #snb-modal {
-  margin: 131px auto 0;
-  width: 580px;
-  max-width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height {
-  height: 100%;
-  overflow: hidden;
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog {
-  height: 100%;
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content {
-  height: 100%;
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-header,
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-footer {
-  position: relative;
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading,
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading {
-  display: block;
-  position: absolute;
-  top: auto;
-  left: 0;
-  right: 0;
-  height: 1px;
-  z-index: 10;
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-top,
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-top {
-  bottom: -1px;
-  background-image: -webkit-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(top, #aaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(to bottom, #aaa 0%, rgba(0, 0, 0, 0) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaaaaaa', endColorstr='#00000000', GradientType=0);
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-header .body-fading.body-fading-bottom,
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-footer .body-fading.body-fading-bottom {
-  top: -1px;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #aaa 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #aaa 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ffaaaaaa', GradientType=0);
-}
-#container #top #header .region-navigation #snb-modal.modal-fixed-height .modal-dialog .modal-content .modal-body {
-  overflow-y: auto;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog {
-  margin: 0;
-  width: 100%;
-}
-.admin-menu #container #top #header .region-navigation #snb-modal .modal-dialog {
-  margin: 29px 0 0;
-}
-@media screen and (min-width: 32.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog {
-    min-width: 480px;
-    max-width: 690px;
-    width: 90%;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog {
-    max-width: 520px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog {
-    width: 520px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content {
-  position: relative;
-  padding: 20px;
-  background: #fff none;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: none;
-  -webkit-box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
-  box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-header {
-  padding: 0;
-  border: none;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-header h2.modal-title {
-  display: none;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-header button.close {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 20px;
-  height: 20px;
-  opacity: 1.0;
-  z-index: 1;
-  border: none;
-  background: none;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-header button.close span {
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60px;
-  font-weight: normal;
-  color: #222;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-header .body-fading {
-  display: none;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body {
-  padding: 20px 15px 30px;
-}
-@media screen and (min-width: 32.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body {
-    padding-bottom: 50px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-title {
-  margin: 0 0 30px;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  letter-spacing: normal;
-  line-height: 26px;
-  text-align: left;
-  color: #222;
-  font-weight: normal;
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
-    font-size: 2.86458333vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
-    font-size: 22px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
-  margin: 10px auto 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  letter-spacing: normal;
-  line-height: 26px;
-  text-align: left;
-  color: #222;
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
-    font-size: 2.86458333vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h1,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h2,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h3,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-title {
-    font-size: 22px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
-  margin: 10px auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  line-height: 1.2em;
-  text-align: left;
-  color: #222;
-}
-@media screen and (min-width: 36em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
-    font-size: 3.125vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h4,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h5,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item h6,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-subtitle {
-    font-size: 24px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-  margin: 0 0 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-  color: #222;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
-}
-@media screen and (min-width: 42.35294117647059em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-    font-size: 2.21354167vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-    font-size: 17px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  color: #222;
-  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
-}
-@media screen and (min-width: 24em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
-    font-size: 13.02083333vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
-    font-size: 100px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
-    font-size: 100px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  letter-spacing: normal;
-  line-height: 26px;
-  text-align: left;
-  color: #222;
-  text-align: center;
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
-    font-size: 2.86458333vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-quote {
-    font-size: 22px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-  color: #222;
-}
-@media screen and (min-width: 42.35294117647059em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-    font-size: 2.21354167vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-    font-size: 17px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item a:hover,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item a:focus {
-  color: #000;
-  text-decoration: underline;
-  background: none;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-  font-size: 15px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-  color: #222;
-  font-family: Arial, Helvetica, sans-serif;
-}
-@media screen and (min-width: 42.35294117647059em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-    font-size: 2.21354167vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-    font-size: 17px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-  font-size: 15px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-  color: #222;
-  font-family: Arial, Helvetica, sans-serif;
-}
-@media screen and (min-width: 42.35294117647059em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-    font-size: 2.21354167vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-    font-size: 17px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-  color: #222;
-}
-@media screen and (min-width: 42.35294117647059em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-    font-size: 2.21354167vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-    font-size: 17px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item u:hover,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item u:focus {
-  color: #000000;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  letter-spacing: normal;
-  line-height: 1.15em;
-  text-align: left;
-  color: #222;
-  background-color: #ff0;
-}
-@media screen and (min-width: 42.35294117647059em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-    font-size: 2.21354167vw;
-  }
-}
-@media screen and (min-width: 48em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 61.5em) {
-  #container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-    font-size: 17px;
-  }
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item hr {
-  border: 0;
-  border-bottom: 2px solid #fff;
-  background: none;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item img {
-  display: block;
-  overflow: hidden;
-  margin: 20px auto;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item embed,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item video,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item audio,
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .field-name-body .field-item iframe {
-  display: block;
-  overflow: hidden;
-  margin: 20px auto;
-  padding: 15px;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  min-height: 350px;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .webform-client-form label.control-label {
-  display: inline-block;
-  width: 130px;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-body .node-webform > .row > .col-sm-12 > .webform-client-form input {
-  display: inline-block;
-  width: 300px;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-footer {
-  display: none;
-  padding: 10px 0;
-  border: none;
-  text-align: center;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-footer .btn {
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 2px solid #222;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
-  -moz-box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
-  box-shadow: 0 0 4px rgba(100, 100, 100, 0.4);
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-footer .btn:hover {
-  color: #fff;
-  background-color: #fff;
-}
-#container #top #header .region-navigation #snb-modal .modal-dialog .modal-content .modal-footer .body-fading {
-  display: none;
+  bottom: 20px;
 }
 #container #top #header #metanav {
   display: none;
@@ -3198,6 +2943,16 @@ body {
 #container #mainrow #sidebar-hook {
   display: none;
 }
-.modal-backdrop.in {
-  background-color: rgba(0, 0, 0, 0.3);
+#container footer {
+  margin: 18px 20px 20px 20px;
+  min-height: 18px;
+  background: none;
+  text-align: center;
+}
+@media screen and (min-width: 32.5em) {
+  #container footer {
+    background: no-repeat right center;
+    background-image: url("../img/logo-small.png");
+    background-size: 62px 11px;
+  }
 }

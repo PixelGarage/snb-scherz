@@ -66,20 +66,14 @@ body {
             display: inline-block;
             margin: 0;
             #pxl-mixins.title();
+
           }
 
           a {
             position: absolute;
             right: 20px;
+            bottom: 20px;
           }
-        }
-
-        #snb-modal {
-          margin: 131px auto 0;
-          width: 580px;
-          max-width: 100%;
-
-          #pxl-mixins.modal();
         }
       }
 
@@ -177,14 +171,17 @@ body {
     }
   }
 
-}
+  footer {
+    margin: 18px 20px 20px 20px;
+    min-height: 18px;
+    background: none;
+    text-align: center;
 
-
-//
-// modal backdrop
-.modal-backdrop {
-  &.in {
-    background-color: rgba(0,0,0,0.3);
+    @media @narrow {
+      background: no-repeat right center;
+      background-image: url("../img/logo-small.png");
+      background-size: 62px 11px;
+    }
   }
 }
 

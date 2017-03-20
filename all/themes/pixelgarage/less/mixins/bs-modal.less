@@ -4,9 +4,9 @@
 
 // Variables
 // -------------------------
-@pxl-modal-background-color: rgba(0,0,0,0.0);
+@pxl-modal-background-color: rgba(255,255,255,1.0);
 @pxl-modal-max-width: 520px;
-@pxl-fading-height: 1px;
+@pxl-fading-height: 0px;
 
 // Mixins
 // -------------------------
@@ -133,40 +133,6 @@
 
           @media @narrow {
             padding-bottom: 50px;
-          }
-
-          .node-webform {
-            >.row {
-              >.col-sm-12 {
-                >.field-name-title {
-                  margin: 0 0 30px;
-                  .field-item {
-                    h2 {
-                      #pxl-mixins.title();
-                      font-weight: normal;
-                    }
-                  }
-                }
-
-                >.field-name-body {
-                  .field-item {
-                    #pxl-mixins.wysiwyg-body();
-                  }
-                }
-
-                >.webform-client-form {
-                  label.control-label {
-                    display: inline-block;
-                    width: 130px;
-                  }
-
-                  input {
-                    display: inline-block;
-                    width: 300px;
-                  }
-                }
-              }
-            }
           }
         }
 

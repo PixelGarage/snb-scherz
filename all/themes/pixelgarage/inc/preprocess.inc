@@ -36,6 +36,8 @@ function pixelgarage_process_html(&$vars) {
   drupal_add_html_head($data, $key = 'meta5');
   $data = array('#tag' => 'meta', '#attributes' => array('name' => 'application-name', 'content' => 'www.snb.ch','data-rendered' => "2017-03-08T12:42:46.508+0100", 'data-snbv' => "7.2.49", 'data-url' => "/de/", 'data-virtual' => "snbng-web01-prod",));
   drupal_add_html_head($data, $key = 'meta6');
+  $data = array('#tag' => 'meta', '#attributes' => array('name' => 'viewport', 'content' => 'initial-scale=1.0',));
+  drupal_add_html_head($data, $key = 'meta7');
 
   // add head links
   drupal_add_html_head_link(array('rel' => "apple-touch-icon-precomposed", 'sizes' => "228x228", 'href' => "http://snb.ch/apple-touch-icon-228x228.png",));
