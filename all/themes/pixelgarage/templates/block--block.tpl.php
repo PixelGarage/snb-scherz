@@ -46,19 +46,13 @@
  */
 // node to load
 $nid = 21;
-
-// modal dialog
-$path = drupal_get_path('theme', 'pixelgarage') . '/images/popup_close.svg';
 $button_text = t('Hier anmelden');
-$modal_title = null;
-$close_text = t('Schliessen');
-$close_img = file_create_url($path);
 
 ?>
 <section id="block-registration" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php print $content ?>
   <!-- modal trigger data-toggle="modal" data-target="#snb-modal"-->
-  <a class="button" role="button" href="node/<?php print $nid; ?>">
+  <a class="button" role="button" href="/node/<?php print $nid; ?>">
     <?php print $button_text; ?>
   </a>
 </section>

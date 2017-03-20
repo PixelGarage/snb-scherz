@@ -374,7 +374,7 @@ $render_item = node_view($node, 'default');
           </div>
         </div>
       <?php else: ?>
-        <?php if ($render_item) print render($render_item); ?>
+        <?php print render($page['content']); ?>
       <?php endif; ?>
     </div>
     <div id="main-hook" class="narrow">&nbsp;</div>
