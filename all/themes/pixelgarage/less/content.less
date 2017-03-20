@@ -1,0 +1,191 @@
+/*
+ *  Content section (main content)
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@snb-box-shadow: 0 0 10px rgba(50,50,50,.75);
+@snb-max-width: 940px;
+
+// Mixins
+// -------------------------
+
+
+
+// Main settings
+// -------------------------
+html {
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  min-width: unset;
+  padding: 0 20px;
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+  max-width: @snb-max-width;
+
+  #top {
+    width: 100%;
+
+    #header {
+      position: relative;
+      margin-left: 0;
+
+      #logo {
+        display: none;
+        margin-left: 0;
+        vertical-align: top;
+
+        @media @special-break {
+          display: block;
+        }
+      }
+
+      .region-navigation {
+        display: inline-block;
+        margin-left: 0;
+        vertical-align: top;
+        width: 100%;
+        background: #fff none;
+        #pxl-mixins.box-shadow(@snb-box-shadow);
+
+        @media @special-break {
+          margin-left: 20px;
+          width: 520px;
+        }
+
+        #block-registration {
+          position: relative;
+          padding: 20px;
+
+          .pxl-title {
+            display: inline-block;
+            margin: 0;
+            #pxl-mixins.title();
+          }
+
+          a {
+            position: absolute;
+            right: 20px;
+          }
+        }
+
+        #snb-modal {
+          margin: 131px auto 0;
+          width: 580px;
+          max-width: 100%;
+
+          #pxl-mixins.modal();
+        }
+      }
+
+      #metanav {
+        display: none;
+        float: none;
+        margin-left: 20px;
+        margin-right: -4px;
+        vertical-align: top;
+
+        @media @normal {
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+
+  #mainrow {
+    width: 100%;
+    margin-left: 0;
+
+    #navbar {
+      display: none;
+      margin-left: 0;
+      vertical-align: top;
+
+      @media @special-break {
+        display: inline-block;
+      }
+    }
+
+    #main {
+      display: inline-block;
+      margin-left: 0;
+      vertical-align: top;
+      width: 100%;
+      background-color: #fff;
+      #pxl-mixins.box-shadow(@snb-box-shadow);
+
+      @media @special-break {
+        margin-left: 20px;
+        width: 520px;
+      }
+
+      .columnwrapper {
+        .column50 {
+          float: left;
+          min-height: 1px;
+          padding: 0;
+          width: 100%;
+
+          @media @narrow {
+            width: 220px;
+
+            &:first-child {
+              padding-right: 40px;
+            }
+          }
+        }
+      }
+
+      .column100 .list .col {
+        margin-left: 0;
+        width: 100%;
+
+        @media @narrow {
+          margin-left: 20px;
+          width: 400px;
+        }
+
+        &:first-child {
+          margin-left: 0;
+          width: 60px;
+        }
+      }
+    }
+    #main-hook {
+      display: none;
+    }
+
+    #sidebar {
+      display: none;
+      margin-left: 20px;
+      vertical-align: top;
+      background-color: #fff;
+      #pxl-mixins.box-shadow(@snb-box-shadow);
+
+      @media @normal {
+        display: inline-block;
+      }
+    }
+    #sidebar-hook {
+      display: none;
+    }
+  }
+
+}
+
+
+//
+// modal backdrop
+.modal-backdrop {
+  &.in {
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
+
