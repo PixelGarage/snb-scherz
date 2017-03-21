@@ -28,9 +28,25 @@
       }
 
       >.field-name-body {
-        margin: 0 0 80px;
+        margin: 0 0 20px;
         #pxl-mixins.wysiwyg-body();
-        #pxl-mixins.font-size-responsive(17px, 17px, 17px);
+        p, a, strong {
+          #pxl-mixins.font-size-responsive(17px, 17px, 17px);
+        }
+      }
+
+      >.field-name-field-video {
+        .field-item {
+          embed, video, audio, iframe {
+            display: block;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            min-height: 300px;
+          }
+        }
       }
 
       >.paragraphs-items {

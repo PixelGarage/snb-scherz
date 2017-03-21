@@ -23,7 +23,6 @@ function pxl_hooks_menu() {
 }
 
 function pxl_hooks_registration_callback($node) {
-  $test = node;
   if ($node) {
     return node_view($node);
   }

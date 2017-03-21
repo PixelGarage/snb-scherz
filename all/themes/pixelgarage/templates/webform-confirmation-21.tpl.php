@@ -33,7 +33,28 @@ $shariff_block = module_exists('shariff') ? shariff_block_view('shariff_block') 
   <?php endif; ?>
 </div>
 
-<div><?php print render($shariff_block); ?></div>
+<div class="shariff" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;mail&quot;]" data-theme="white" data-orientation="horizontal" data-mail-url="mailto:" data-lang="de" data-url="http://schweizernationalbank.ch/snb-studie/anmeldung">
+  <ul class="theme-white orientation-horizontal col-3">
+    <li class="shariff-button twitter">
+      <a href="https://twitter.com/intent/tweet?text=Schweizerische%20Nationalbank%20(SNB)%20-%20Die%20Schweizerische%20Nationalbank%20f%C3%BChrt%20als%20unabh%C3%A4ngige%20Zentralbank%20die%20Geld-%20und%E2%80%A6&amp;url=http%3A%2F%2Fschweizernationalbank.ch%2Fsnb-studie%2Fanmeldung" data-rel="popup" title="Share on Twitter" role="button" aria-label="Share on Twitter">
+        <span class="fa fa-twitter"></span>
+        <span class="share_text">tweet</span>
+      </a>
+    </li>
+    <li class="shariff-button facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fschweizernationalbank.ch%2Fsnb-studie%2Fanmeldung" data-rel="popup" title="Share on Facebook" role="button" aria-label="Share on Facebook">
+        <span class="fa fa-facebook"></span>
+        <span class="share_text">share</span>
+      </a>
+    </li>
+    <li class="shariff-button mail"><a href="mailto:?subject=Schweizerische%20Nationalbank%20(SNB)%20-%20Die%20Schweizerische%20Nationalbank%20f%C3%BChrt%20als%20unabh%C3%A4ngige%20Zentralbank%20die%20Geld-%20und%20W%C3%A4hrungspolitik%20des%20Landes&amp;body=http%3A%2F%2Fschweizernationalbank.ch%2Fsnb-studie%2Fanmeldung" title="Send by email" role="button" aria-label="Send by email">
+        <span class="fa fa-envelope"></span>
+        <span class="share_text">mail</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
 <div class="links">
   <a href="/"><?php print t('Zurück zur Startseite') ?></a>

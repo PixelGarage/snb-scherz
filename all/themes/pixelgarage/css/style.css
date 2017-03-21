@@ -2402,6 +2402,200 @@ extend ' .btn-lg' has no matches
  * Pixelgarage Components
  * --------------------------------------------------*/
 /*
+ *  ShareThis component
+ * --------------------------------------------------*/
+@font-face {
+  font-family: "SSSocial-Circle";
+  src: url('../fonts/ss-social/ss-social-circle.eot');
+  src: url('../fonts/ss-social/ss-social-circle.eot?#iefix') format('embedded-opentype'), url('../fonts/ss-social/ss-social-circle.woff') format('woff'), url('../fonts/ss-social/ss-social-circle.ttf') format('truetype'), url('../fonts/ss-social/ss-social-circle.svg#SSSocialCircle') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SSSocial-Regular";
+  src: url('../fonts/ss-social/ss-social-regular.eot');
+  src: url('../fonts/ss-social/ss-social-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ss-social/ss-social-regular.woff') format('woff'), url('../fonts/ss-social/ss-social-regular.ttf') format('truetype'), url('../fonts/ss-social/ss-social-regular.svg#SSSocialRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.shariff ul.orientation-horizontal.col-3 {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+}
+.shariff ul.orientation-horizontal.col-3 li.shariff-button {
+  display: inline-block;
+  min-width: 50px;
+  max-width: 80px;
+  width: 80px;
+  border: none;
+}
+.shariff ul.orientation-horizontal.col-3 li.shariff-button a {
+  outline: none;
+}
+.shariff ul.orientation-horizontal.col-3 li.shariff-button a:hover,
+.shariff ul.orientation-horizontal.col-3 li.shariff-button a.active,
+.shariff ul.orientation-horizontal.col-3 li.shariff-button a:focus {
+  outline: none;
+}
+.a2a_kit.a2a_floating_style {
+  display: none;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  -moz-border-radius: 5;
+  -webkit-border-radius: 5;
+  border-radius: 5;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background: white;
+}
+@media screen and (min-width: 48em) {
+  .a2a_kit.a2a_floating_style {
+    display: block;
+  }
+}
+.a2a_kit a {
+  margin: 0 0 10px;
+  padding: 0;
+}
+.a2a_kit a .a2a_label {
+  display: none;
+}
+.a2a_kit a .a2a_svg {
+  font-family: "SSSocial-Circle";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  width: 40px;
+  height: 40px;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background: none !important;
+}
+.a2a_kit a .a2a_svg:hover {
+  font-family: "SSSocial-Regular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  opacity: 1.0;
+}
+.a2a_kit a .a2a_svg:before {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.a2a_kit a.a2a_button_facebook .a2a_svg:before {
+  content: "\f610";
+}
+.a2a_kit a.a2a_button_twitter .a2a_svg:before {
+  content: "\f611";
+}
+.a2a_kit a.a2a_button_google_plus .a2a_svg:before {
+  content: "\f613";
+}
+.a2a_kit a.a2a_button_email .a2a_svg:before {
+  content: '✉';
+}
+.a2a_kit a.a2a_button_pinterest .a2a_svg:before {
+  content: "\f650";
+}
+#block-follow-site {
+  display: inline-block;
+}
+#block-follow-site .block-title {
+  display: none;
+  margin: 0;
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+}
+@media screen and (min-width: 32.5em) {
+  #block-follow-site .block-title {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  #block-follow-site .block-title {
+    font-size: 23px;
+    line-height: 23px;
+  }
+}
+#block-follow-site .follow-links {
+  display: inline-block;
+  vertical-align: top;
+}
+#block-follow-site .follow-links .follow-link-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link {
+  padding: 0 5px;
+  font-family: "SSSocial-Circle";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-size: 30px;
+  line-height: 30px;
+  color: white;
+  background: none !important;
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link:hover {
+  font-family: "SSSocial-Regular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link.follow-link-facebook:before {
+  content: "\f610";
+}
+#block-follow-site .follow-links .follow-link-wrapper a.follow-link.follow-link-twitter:before {
+  content: "\f611";
+}
+/*
  *  Node page component
  * --------------------------------------------------*/
 .node.node-page.view-mode-full,
@@ -2438,8 +2632,7 @@ extend ' .btn-lg' has no matches
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
 .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
-  margin: 0 0 80px;
-  font-size: 17px;
+  margin: 0 0 20px;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
 .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
@@ -2852,23 +3045,59 @@ extend ' .btn-lg' has no matches
   height: auto;
   min-height: 350px;
 }
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong {
+  font-size: 17px;
+}
 @media screen and (min-width: 48em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 48em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 61.5em) {
-  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
-  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong {
     font-size: 17px;
   }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-field-video .field-item embed,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-field-video .field-item embed,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-field-video .field-item video,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-field-video .field-item video,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-field-video .field-item audio,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-field-video .field-item audio,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-field-video .field-item iframe,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-field-video .field-item iframe {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child),
 .node.node-page.view-mode-default > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
