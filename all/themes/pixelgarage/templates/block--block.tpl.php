@@ -52,7 +52,7 @@ $button_text = t('Hier anmelden');
 <section id="block-registration" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php print $content ?>
   <!-- modal trigger data-toggle="modal" data-target="#snb-modal"-->
-  <a class="button" role="button" href="/node/<?php print $nid; ?>">
+  <a class="button" role="button" href="/snb-studie/anmeldung">
     <?php print $button_text; ?>
   </a>
 </section>

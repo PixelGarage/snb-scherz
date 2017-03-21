@@ -2439,6 +2439,7 @@ extend ' .btn-lg' has no matches
 .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
 .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
   margin: 0 0 80px;
+  font-size: 17px;
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
 .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
@@ -2850,6 +2851,24 @@ extend ' .btn-lg' has no matches
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+    font-size: 17px;
+  }
 }
 .node.node-page.view-mode-full > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child),
 .node.node-page.view-mode-default > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
