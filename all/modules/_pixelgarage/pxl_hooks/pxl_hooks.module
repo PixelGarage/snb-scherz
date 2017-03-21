@@ -9,6 +9,39 @@
 /* --------------------------------------------------
  * Themes and field formatters for date-time ranges
  * --------------------------------------------------*/
+function pxl_hooks_menu() {
+  $items['snb-studie/registration/%node'] = array(
+    'title' => 'Registration',
+    'page callback' => 'pxl_hooks_registration_callback',
+    'page arguments' => array(2),
+    'access callback' => 'pxl_hooks_registration_access',
+    'access arguments' => array(2),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+function pxl_hooks_registration_callback($node) {
+  $test = node;
+  if ($node) {
+    return node_view($node);
+  }
+  return null;
+}
+
+/**
+ * Allows to view, edit or delete submissions, if anonymous user token is correct.
+ */
+function pxl_hooks_registration_access($node) {
+  $token = 'jGkfHwozrXf7plq9CSwlb5ggrRzwDJJxIaIaiFQN7bY';
+  $anonymous_access = $node->nid == 22 && isset($_GET['token']) && $_GET['token'] == $token;
+
+  return $anonymous_access;
+}
+
+
+
 /**
  * Implements hook_field_formatter_info().
  */

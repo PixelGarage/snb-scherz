@@ -2402,6 +2402,466 @@ extend ' .btn-lg' has no matches
  * Pixelgarage Components
  * --------------------------------------------------*/
 /*
+ *  Node page component
+ * --------------------------------------------------*/
+.node.node-page.view-mode-full,
+.node.node-page.view-mode-default {
+  padding: 20px;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #222;
+  font-weight: normal;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-title h2,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-title h2 {
+    font-size: 22px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body {
+  margin: 0 0 80px;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+  margin: 10px auto 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #222;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h1,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h1,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h2,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h2,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h3,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h3,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-title,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-title {
+    font-size: 22px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  text-align: left;
+  color: #222;
+}
+@media screen and (min-width: 36em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+    font-size: 3.125vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h4,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h4,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h5,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h5,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body h6,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body h6,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-subtitle,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
+    font-size: 24px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+  margin: 0 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+    font-size: 1.43229167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body p,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body p {
+    font-size: 11px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
+}
+@media screen and (min-width: 24em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+    font-size: 13.02083333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-glow,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-glow {
+    font-size: 100px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #222;
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body .pxl-quote,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body .pxl-quote {
+    font-size: 22px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  color: #7ca3c6;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+    font-size: 1.43229167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a {
+    font-size: 11px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a:hover,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a:hover,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body a:focus,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body a:focus {
+  color: #3e5570;
+  text-decoration: none;
+  background: none;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+  font-size: 11px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+    font-size: 1.43229167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body pre,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body pre,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body address,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body address,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body i,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body i,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body em,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body em {
+    font-size: 11px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+  font-size: 11px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+    font-size: 1.43229167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body strong,
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body b,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body b {
+    font-size: 11px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  color: #7ca3c6;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+    font-size: 1.43229167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body u,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body u {
+    font-size: 11px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body u:hover,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body u:hover,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body u:focus,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body u:focus {
+  color: #3e5570;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: normal;
+  line-height: 1.15em;
+  text-align: left;
+  color: #222;
+  background-color: #ff0;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+    font-size: 1.43229167vw;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 61.5em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body mark,
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body mark {
+    font-size: 11px;
+  }
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body hr,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #fff;
+  background: none;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body img,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body img {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body embed,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body embed,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body video,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body video,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body audio,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body audio,
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .field-name-body iframe,
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .field-name-body iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px;
+}
+.node.node-page.view-mode-full > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child),
+.node.node-page.view-mode-default > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page.view-mode-full > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child),
+  .node.node-page.view-mode-default > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+/*
  *  Node / block webform component
  * --------------------------------------------------*/
 .node.node-webform {
@@ -2515,7 +2975,7 @@ extend ' .btn-lg' has no matches
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
   margin: 0 0 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
@@ -2527,19 +2987,19 @@ extend ' .btn-lg' has no matches
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-    font-size: 2.21354167vw;
+    font-size: 1.43229167vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 61.5em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item p {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item .pxl-glow {
@@ -2593,50 +3053,51 @@ extend ' .btn-lg' has no matches
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
   color: #222;
+  color: #7ca3c6;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-    font-size: 2.21354167vw;
+    font-size: 1.43229167vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 61.5em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a:hover,
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item a:focus {
-  color: #000;
-  text-decoration: underline;
+  color: #3e5570;
+  text-decoration: none;
   background: none;
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
   color: #222;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item pre,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-    font-size: 2.21354167vw;
+    font-size: 1.43229167vw;
   }
 }
 @media screen and (min-width: 48em) {
@@ -2644,7 +3105,7 @@ extend ' .btn-lg' has no matches
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 61.5em) {
@@ -2652,85 +3113,86 @@ extend ' .btn-lg' has no matches
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item address,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item i,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item em {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
   color: #222;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-    font-size: 2.21354167vw;
+    font-size: 1.43229167vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 61.5em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item strong,
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item b {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
   color: #222;
+  color: #7ca3c6;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-    font-size: 2.21354167vw;
+    font-size: 1.43229167vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 61.5em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u:hover,
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item u:focus {
-  color: #000;
+  color: #3e5570;
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: normal;
   line-height: 1.15em;
   text-align: left;
   color: #222;
   background-color: #ff0;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-    font-size: 2.21354167vw;
+    font-size: 1.43229167vw;
   }
 }
 @media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 61.5em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item mark {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 .node.node-webform > .row > .col-sm-12 > .field-name-body .field-item hr {
@@ -2987,11 +3449,11 @@ form#user-login {
 }
 .webform-confirmation .confirmation-message {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 20px;
   text-align: center;
 }
-@media screen and (min-width: 51.42857142857143em) {
+@media screen and (min-width: 37.714285714285715em) {
   .webform-confirmation .confirmation-message {
     font-size: 1.82291667vw;
   }
