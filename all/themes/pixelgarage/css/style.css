@@ -3126,12 +3126,6 @@ extend ' .btn-lg' has no matches
   text-align: left;
   color: #222;
   font-weight: normal;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
 }
 @media screen and (min-width: 48em) {
   .node.node-webform > .row > .col-sm-12 > .field-name-title .field-item h2 {
