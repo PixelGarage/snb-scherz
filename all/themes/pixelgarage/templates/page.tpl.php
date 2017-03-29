@@ -187,9 +187,12 @@ $render_item = node_view($node, 'default');
       <?php if ($is_front): ?>
         <a href="http://snb.ch/de/#" id="printOperator">Drucken</a>
         <div class="content">
-          <h1>Die Schweizerische Nationalbank führt als unabhängige Zentralbank die Geld- und Währungspolitik des Landes</h1>
+          <h1>Die Schweizerische Nationalbank führt als unabhängige Zentralbank die Geld- und Währungspolitik des
+            Landes</h1>
           <div class="clearfix">
-            <p><span class="imgwrapper"><img src="<?php print $files_url . "/topic1_img0001.png"?>" alt="Startseite-01" width="100%" height="103"></span></p>
+            <p><span class="imgwrapper"><img
+                    src="<?php print $files_url . "/topic1_img0001.png"?>"
+                    alt="Startseite-01" width="492" height="103"></span></p>
             <div class="columnwrapper" style="visibility: visible;">
               <div class="column100">
                 <div>
@@ -206,61 +209,67 @@ $render_item = node_view($node, 'default');
                     <ul>
                       <li>
                         <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
-                          <div itemprop="datePublished" class="col" content="2017-03-08T11:36">
-                            <span class="date">08.03.2017</span>
-                          </div>
-                          <div itemprop="name" class="col">
-                            <b>Bundesanleihen</b>
-                            <br>
-                            <a href="http://snb.ch/de/mmr/reference/ch_bonds_res/source/ch_bonds_res.de.pdf">Öffentliche Anleihen der Schweizerischen Eidgenossenschaft: Zeichnungsergebnisse</a>
-                          </div>
-                        </article>
-                      </li>
-                      <li>
-                        <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
-                          <div itemprop="datePublished" class="col" content="2017-03-07T11:30">
-                            <span class="date">07.03.2017</span>
+                          <div itemprop="datePublished" class="col" content="2017-03-28T11:30">
+                            <span class="date">28.03.2017</span>
                           </div>
                           <div itemprop="name" class="col">
                             <b>Geldmarkt-Buchforderungen</b>
                             <br>
-                            <a href="http://snb.ch/de/mmr/reference/claims_res/source/claims_res.de.pdf">Geldmarkt-Buchforderungen der Schweizerischen Eidgenossenschaft: Zeichnungsergebnisse</a>
+                            <a href="http://snb.ch/de/mmr/reference/claims_res/source/claims_res.de.pdf">Geldmarkt-Buchforderungen
+                              der Schweizerischen Eidgenossenschaft: Zeichnungsergebnisse</a>
                           </div>
                         </article>
                       </li>
                       <li>
                         <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
-                          <div itemprop="datePublished" class="col" content="2017-03-07T09:00">
-                            <span class="date">07.03.2017</span>
-                          </div>
-                          <div itemprop="name" class="col">
-                            <b>Statistik</b>
-                            <br>
-                            <a href="http://snb.ch/de/mmr/reference/imfsdds_2017_03_07/source/imfsdds_2017_03_07.de.pdf">IMF Special Data Dissemination Standard (SNB Data), 7. März 2017</a>
-                          </div>
-                        </article>
-                      </li>
-                      <li>
-                        <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
-                          <div itemprop="datePublished" class="col" content="2017-03-07T08:00">
-                            <span class="date">07.03.2017</span>
-                          </div>
-                          <div itemprop="name" class="col">
-                            <b>Bundesanleihen</b>
-                            <br>
-                            <a href="http://snb.ch/de/mmr/reference/ch_bonds_new/source/ch_bonds_new.de.pdf">Öffentliche Anleihen der Schweizerischen Eidgenossenschaft: Neue Anleihen</a>
-                          </div>
-                        </article>
-                      </li>
-                      <li>
-                        <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
-                          <div itemprop="datePublished" class="col" content="2017-03-06T10:00">
-                            <span class="date">06.03.2017</span>
+                          <div itemprop="datePublished" class="col" content="2017-03-27T10:00">
+                            <span class="date">27.03.2017</span>
                           </div>
                           <div itemprop="name" class="col">
                             <b>Medienmitteilung</b>
                             <br>
-                            <a href="http://snb.ch/de/mmr/reference/gwd_20170306/source/gwd_20170306.de.pdf">Geldpolitisch wichtige Daten für die Woche zum 3. März 2017</a>
+                            <a href="http://snb.ch/de/mmr/reference/gwd_20170327/source/gwd_20170327.de.pdf">Geldpolitisch
+                              wichtige Daten für die Woche zum 24. März 2017</a>
+                          </div>
+                        </article>
+                      </li>
+                      <li>
+                        <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
+                          <div itemprop="datePublished" class="col" content="2017-03-24T09:00:01">
+                            <span class="date">24.03.2017</span>
+                          </div>
+                          <div itemprop="name" class="col">
+                            <b>Medienmitteilung</b>
+                            <br>
+                            <a href="http://snb.ch/de/mmr/reference/pre_20170324/source/pre_20170324.de.pdf">Zahlungsbilanz
+                              und Auslandvermögen der Schweiz: 4. Quartal 2016 und Jahr 2016</a>
+                          </div>
+                        </article>
+                      </li>
+                      <li>
+                        <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
+                          <div itemprop="datePublished" class="col" content="2017-03-24T09:00">
+                            <span class="date">24.03.2017</span>
+                          </div>
+                          <div itemprop="name" class="col">
+                            <b>Datenportal der SNB</b>
+                            <br>
+                            <a href="https://data.snb.ch/de/publishingSet/BOPIIP">Zahlungsbilanz und Auslandvermögen der
+                              Schweiz, 4. Quartal 2016</a>
+                          </div>
+                        </article>
+                      </li>
+                      <li>
+                        <article itemscope="itemscope" itemtype="http://schema.org/Article" class="clearfix">
+                          <div itemprop="datePublished" class="col" content="2017-03-23T18:00:01">
+                            <span class="date">23.03.2017</span>
+                          </div>
+                          <div itemprop="name" class="col">
+                            <b>Referat</b>
+                            <br>
+                            <span>Andréa M. Maechler:</span><span> </span>
+                            <a href="http://snb.ch/de/mmr/speeches/id/ref_20170323_amr">Die SNB-Anlagepolitik und ihre
+                              Besonderheiten</a>
                           </div>
                         </article>
                       </li>
@@ -287,61 +296,66 @@ $render_item = node_view($node, 'default');
                     <ul>
                       <li>
                         <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
-                          <div itemprop="startdate" class="col" content="2017-03-08T11:00">
-                            <span class="date">08.03.2017</span>
+                          <div itemprop="startdate" class="col" content="2017-04-07T09:00">
+                            <span class="date">07.04.2017</span>
+                            <br>
+                            <span>09:00</span>
+                          </div>
+                          <div itemprop="name" class="col">
+                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170407.de.ics">IMF SDDS (SNB Data):
+                              International Reserves and Foreign Currency Liquidity</a>
+                          </div>
+                        </article>
+                      </li>
+                      <li>
+                        <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
+                          <div itemprop="startdate" class="col" content="2017-04-11T08:00">
+                            <span class="date">11.04.2017</span>
+                            <br>
+                            <span>08:00</span>
+                          </div>
+                          <div itemprop="name" class="col">
+                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170411.de.ics">Eidgenössische
+                              Anleihe - Ankündigung</a>
+                          </div>
+                        </article>
+                      </li>
+                      <li>
+                        <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
+                          <div itemprop="startdate" class="col" content="2017-04-12T11:00">
+                            <span class="date">12.04.2017</span>
                             <br>
                             <span>11:00</span>
                           </div>
                           <div itemprop="name" class="col">
-                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170308.de.ics">Eidgenössische Anleihe - Ergebnis</a>
+                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170412.de.ics">Eidgenössische
+                              Anleihe - Ergebnis</a>
                           </div>
                         </article>
                       </li>
                       <li>
                         <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
-                          <div itemprop="startdate" class="col" content="2017-03-16T09:30">
-                            <span class="date">16.03.2017</span>
-                            <br>
-                            <span>09:30</span>
-                          </div>
-                          <div itemprop="name" class="col">
-                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170316.de.ics">Geldpolitische Lagebeurteilung </a>
-                          </div>
-                        </article>
-                      </li>
-                      <li>
-                        <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
-                          <div itemprop="startdate" class="col" content="2017-03-21T09:00">
-                            <span class="date">21.03.2017</span>
+                          <div itemprop="startdate" class="col" content="2017-04-21T09:00">
+                            <span class="date">21.04.2017</span>
                             <br>
                             <span>09:00</span>
                           </div>
                           <div itemprop="name" class="col">
-                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170321_1.de.ics">Volkswirtschaftliche Daten, März 2017 (Datenportal der SNB)</a>
+                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170421_1.de.ics">Volkswirtschaftliche
+                              Daten, April 2017 (Datenportal der SNB)</a>
                           </div>
                         </article>
                       </li>
                       <li>
                         <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
-                          <div itemprop="startdate" class="col" content="2017-03-21T09:00">
-                            <span class="date">21.03.2017</span>
+                          <div itemprop="startdate" class="col" content="2017-04-21T09:00">
+                            <span class="date">21.04.2017</span>
                             <br>
                             <span>09:00</span>
                           </div>
                           <div itemprop="name" class="col">
-                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170321_2.de.ics">Monatliche Bankenstatistik, März 2017 (Datenportal der SNB)</a>
-                          </div>
-                        </article>
-                      </li>
-                      <li>
-                        <article itemscope="itemscope" itemtype="http://schema.org/BusinessEvent" class="clearfix">
-                          <div itemprop="startdate" class="col" content="2017-03-22T15:00">
-                            <span class="date">22.03.2017</span>
-                            <br>
-                            <span>15:00</span>
-                          </div>
-                          <div itemprop="name" class="col">
-                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170322.de.ics">Quartalsheft 1/2017 (Bericht über die Geldpolitik - Konjunkturtendenzen)</a>
+                            <a class="summary" href="http://snb.ch/de/mmr/event/evt_20170421_2.de.ics">Monatliche
+                              Bankenstatistik, April 2017 (Datenportal der SNB)</a>
                           </div>
                         </article>
                       </li>
@@ -354,20 +368,36 @@ $render_item = node_view($node, 'default');
               <div class="column50">
                 <h2>Empfohlene Seiten</h2>
                 <ul class="linklist">
-                  <li><a href="http://snb.ch/de/ifor/media/id/media_releases" class="link-internal">Medienmitteilungen</a></li>
-                  <li><a href="http://snb.ch/de/iabout/cash/id/cash_instr_overview" title="Merkblätter Banknoten und Münzen " class="link-internal">Merkblätter Banknoten und Münzen</a></li>
-                  <li><a href="http://snb.ch/de/iabout/stat/statpub/id/statpub_overview" class="link-internal">Statistische Publikationen (Übersicht)</a></li>
+                  <li><a href="http://snb.ch/de/ifor/media/id/media_releases" class="link-internal">Medienmitteilungen</a>
+                  </li>
+                  <li><a href="http://snb.ch/de/iabout/cash/id/cash_instr_overview"
+                         title="Merkblätter Banknoten und Münzen " class="link-internal">Merkblätter Banknoten und
+                      Münzen</a></li>
+                  <li><a href="http://snb.ch/de/iabout/stat/statpub/id/statpub_overview" class="link-internal">Statistische
+                      Publikationen (Übersicht)</a></li>
                   <li><a href="http://snb.ch/de/ifor/media/id/media_speeches" class="link-internal">Referate</a></li>
                   <li><a href="http://snb.ch/de/ifor/job/id/job_openings" class="link-internal">Offene Stellen</a></li>
-                  <li><a href="http://snb.ch/de/ifor/public/qas/id/qas_noten" title="http://www.snb.ch/de/ifor/public/qas/id/qas_noten" class="link-internal">Fragen und Antworten</a></li>
-                  <li><a href="http://snb.ch/de/ifor/research/id/karl_brunner" title="Karl Brunner Distinguished Lecture Series" class="link-internal">Karl Brunner Distinguished Lecture Series</a>&nbsp;</li>
-                  <li><a href="http://snb.ch/de/ifor/media/id/news_alert" class="link-internal">News Alert: Mail-Service der SNB</a></li>
-                  <li><a href="http://snb.ch/de/ifor/media/id/media_rss" class="link-internal">RSS-Feeds (Übersicht)</a></li>
-                  <li><a href="https://twitter.com/SNB_BNS_de" class="link-external" target="_blank">Die SNB auf Twitter</a></li>
-                  <li><a href="http://snb.ch/de/ifor/media/webtv/id/webtv" class="link-internal">Web-TV: SNB-Anlässe</a></li>
-                  <li><a href="https://www.youtube.com/channel/UC4vQTVEqtj2orppzBkdGmyg" class="link-external" target="_blank">YouTube-Kanal der SNB</a></li>
-                  <li><a href="http://snb.ch/de/iabout/cash/series9/id/cash_series9_downloads/3" class="link-internal">SNB-App "50 Franken"</a></li>
-                  <li><a href="http://snb.ch/de/iabout/pub/pub_snb/id/pub_snb_film" title="SNB-Film" class="link-internal">SNB-Film</a><span class="hyperlink">&nbsp;</span></li>
+                  <li><a href="http://snb.ch/de/ifor/public/qas/id/qas_noten"
+                         title="http://www.snb.ch/de/ifor/public/qas/id/qas_noten" class="link-internal">Fragen und
+                      Antworten</a></li>
+                  <li><a href="http://snb.ch/de/ifor/research/id/karl_brunner"
+                         title="Karl Brunner Distinguished Lecture Series" class="link-internal">Karl Brunner
+                      Distinguished Lecture Series</a>&nbsp;
+                  </li>
+                  <li><a href="http://snb.ch/de/ifor/media/id/news_alert" class="link-internal">News Alert: Mail-Service
+                      der SNB</a></li>
+                  <li><a href="http://snb.ch/de/ifor/media/id/media_rss" class="link-internal">RSS-Feeds (Übersicht)</a>
+                  </li>
+                  <li><a href="https://twitter.com/SNB_BNS_de" class="link-external" target="_blank">Die SNB auf
+                      Twitter</a></li>
+                  <li><a href="http://snb.ch/de/ifor/media/webtv/id/webtv" class="link-internal">Web-TV: SNB-Anlässe</a>
+                  </li>
+                  <li><a href="https://www.youtube.com/channel/UC4vQTVEqtj2orppzBkdGmyg" class="link-external"
+                         target="_blank">YouTube-Kanal der SNB</a></li>
+                  <li><a href="http://snb.ch/de/iabout/cash/series9/id/cash_series9_downloads/3" class="link-internal">SNB-App
+                      "50 Franken"</a></li>
+                  <li><a href="http://snb.ch/de/iabout/pub/pub_snb/id/pub_snb_film" title="SNB-Film"
+                         class="link-internal">SNB-Film</a><span class="hyperlink">&nbsp;</span></li>
                 </ul>
               </div>
             </div>
@@ -385,11 +415,15 @@ $render_item = node_view($node, 'default');
           <nav>
             <div>
               <div class="exchangeRateTeaser">
-                <div class="valuta">08.03.2017</div>
-                <div class="rate"><span class="currency">EUR / CHF</span><span class="trend down">&nbsp;</span><span class="value">1.0695</span></div>
-                <div class="rate"><span class="currency">USD / CHF</span><span class="trend down">&nbsp;</span><span class="value">1.0133</span></div>
-                <div class="rate"><span class="currency">JPY / CHF</span><span class="trend down">&nbsp;</span><span class="value">0.8883</span></div>
-                <div class="rate"><span class="currency">GBP / CHF</span><span class="trend down">&nbsp;</span><span class="value">1.2321</span></div>
+                <div class="valuta">29.03.2017</div>
+                <div class="rate"><span class="currency">EUR / CHF</span><span class="trend up">&nbsp;</span><span
+                      class="value">1.0713</span></div>
+                <div class="rate"><span class="currency">USD / CHF</span><span class="trend up">&nbsp;</span><span
+                      class="value">0.9929</span></div>
+                <div class="rate"><span class="currency">JPY / CHF</span><span class="trend up">&nbsp;</span><span
+                      class="value">0.8946</span></div>
+                <div class="rate"><span class="currency">GBP / CHF</span><span class="trend down">&nbsp;</span><span
+                      class="value">1.2362</span></div>
               </div>
             </div>
             <a href="http://snb.ch/selector/de/mmr/exfeed/rss" class="rss link-internal">RSS</a>
@@ -398,7 +432,9 @@ $render_item = node_view($node, 'default');
         </aside>
         <aside>
           <h2>Aktuelle Zinssätze</h2>
-          <img class="large" src="<?php print $files_url . "/interestrate.jpg"?>" width="180" height="150">
+          <img class="large"
+               src="<?php print $files_url . "/interestrate.jpg"?>"
+               width="180" height="150">
           <nav>
             <a href="http://snb.ch/selector/de/mmr/intfeed/rss" class="rss link-internal">RSS</a>
             <a href="http://snb.ch/de/iabout/stat/statrep/id/current_interest_exchange_rates/2" class="link-internal">weiter</a>
@@ -406,16 +442,20 @@ $render_item = node_view($node, 'default');
         </aside>
         <aside>
           <h2>Bargeld</h2>
-          <img class="medium" src="<?php print $files_url . "/teaser_pic_cash_series9.jpg"?>">
+          <img class="medium"
+               src="<?php print $files_url . "/teaser_pic_cash_series9.jpg"?>">
           <nav>
-            <a href="http://snb.ch/de/iabout/cash/series9/id/cash_series9" class="link-internal">Entdecken Sie die neue Banknotenserie</a>
+            <a href="http://snb.ch/de/iabout/cash/series9/id/cash_series9" class="link-internal">Entdecken Sie die neue
+              Banknotenserie</a>
           </nav>
         </aside>
         <aside>
           <h2>Publikum</h2>
-          <img class="medium" src="<?php print $files_url . "/teaser_pic_our_snb.jpg"?>">
+          <img class="medium"
+               src="<?php print $files_url . "/teaser_pic_our_snb.jpg"?>">
           <nav>
-            <a href="http://snb.ch/de/iabout/pub/pub_snb/id/pub_our_snb" class="link-internal">"Unsere Nationalbank": Eine App, eine Website und eine Broschüre</a>
+            <a href="http://snb.ch/de/iabout/pub/pub_snb/id/pub_our_snb" class="link-internal">"Unsere Nationalbank":
+              Eine App, eine Website und eine Broschüre</a>
           </nav>
         </aside>
       </div>
