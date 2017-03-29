@@ -35,7 +35,15 @@ libraries_load('shariff', $variant);
   <?php endif; ?>
 </div>
 
-<div class="shariff" data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;mail&quot;]" data-theme="white" data-orientation="horizontal" data-mail-url="mailto:" data-lang="de" data-url="http://schweizernationalbank.ch/snb-studie/anmeldung">
+<div class="shariff"
+     data-services="[&quot;twitter&quot;,&quot;facebook&quot;,&quot;mail&quot;]"
+     data-theme="white"
+     data-orientation="horizontal"
+     data-mail-url="mailto:"
+     data-mail-subject="Jordan verteilt 1 Milliarde an Bürger!"
+     data-mail-body="Die Schweizerische Nationalbank investiert einen Teil ihres Gewinns in die Volkswirtschaft. Unter www.schweizernationalbank.ch können sich Studienteilnehmer um 1200.- bewerben. Mit der Bürgerdividende sollen positive Effekte auf die Schweizer Wirtschaft erprobt werden."
+     data-lang="de"
+     data-url="http://schweizernationalbank.ch/studie">
 </div>
 
 <div class="links">
