@@ -184,6 +184,7 @@ $render_item = node_view($node, 'default');
       </ul>
     </nav>
     <div id="main" class="narrow">
+      <?php print $messages; ?>
       <?php if ($is_front): ?>
         <a href="http://snb.ch/de/#" id="printOperator">Drucken</a>
         <div class="content">
